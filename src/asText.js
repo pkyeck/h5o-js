@@ -81,4 +81,4 @@ function asText(sections, options) {
   return result.join("");
 }
 
-module.exports = asHTML;
+module.exports = asText;
