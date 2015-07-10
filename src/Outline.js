@@ -1,4 +1,5 @@
 var asHTML = require("./asHTML");
+var asText = require("./asText");
 
 function Outline(outlineTarget, onlySection) {
 	this.startingNode = outlineTarget.node;
@@ -11,6 +12,10 @@ Outline.prototype.getLastSection = function () {
 
 Outline.prototype.asHTML = function (options) {
 	return asHTML(this.sections, options);
+};
+
+Outline.prototype.asText = function (options) {
+  return asText(this.sections, options);
 };
 
 module.exports = Outline;
